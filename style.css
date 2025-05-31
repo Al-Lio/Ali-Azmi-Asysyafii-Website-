@@ -16,7 +16,7 @@ html{
     width:100%;
     height: 100vh;
     overflow-x:hidden;
-    background-color: #855858;
+    background-color: #a76666;
     color:#ffff;
 } header {
     margin-top : 20px;
@@ -48,14 +48,15 @@ html{
     border-bottom: 3px solid transparent;
    
 } nav a:hover,nav a.active{
-    color:#855858;
-    border-bottom:3px solid #855858;
+    color:#000000;
+    border-bottom:3px solid #000000;
     
 }
  @media(max-width: 995px){
     nav{
         position:absolute;
-        top : 100%;
+        top : 0;
+        display : none;
         right:0;
         width: 40%;
         border-left: 3px solid #855858;
@@ -91,7 +92,7 @@ html{
         justify-content: center;
         align-items:center;
         gap:8rem;
-        background-color:#a76666 ;
+        background: linear-gradient(125deg, #855858 50%, #a76666 50%);
     }.home .home-content h1{
         font-size: 6rem;
         font-weight: 700;
@@ -102,6 +103,8 @@ html{
         font-size: 4rem;
         margin-bottom: 1rem;
         font-weight: 700;
+    }.home-content p{
+        font-size: 1rem;
     }
     .home-img{
         border-radius: 50%;
@@ -190,12 +193,35 @@ html{
             content: "Web Designer";
         }
         21%, 40%{
-            content: "Script designer"
+            content: "Love Calm"
         }
         41%, 60%{
             content: "Web Developer"
         }
         61%, 80%{
-            content: "Matematika Enjoyer"
+            content: "lov MTK"
         }
     }
+    @media(max-width: 1000px){
+        .home{
+            gap: 4rem;
+        }
+    }
+
+    @media (max-width: 955px){
+        .home{
+            flex-direction: column;
+            margin: 5rem 4rem;
+        }
+    }.home.home-content h3{
+        font-size: 2.5rem;
+    }
+    .home-content h1{
+        font-size:5rem;
+    }
+
+    .home-img img{
+      width : 70vh;  
+      margin-top: 4rem;
+    }
+    
